@@ -155,8 +155,8 @@ Doker obraz va konteyner tayyor. Endi nginx konfiguratsiyasiga kirib, sahifa hol
 ##### **nginx** server holati sahifasi *localhost:80/status* manzili bo’yicha berilishini tekshiring.
 ##### *export* buyrug'i yordamida konteynerni *container.tar* fayliga eksport qiling.
 ##### Konteynerni to'xtating.
-##### Avval konteynerlarni o'chirmasdan, obrazni `docker rmi [image_id|repository]` orqali o'chirib tashlang.
 ##### To'xtatilgan konteynerni o’chiring.
+##### Avval konteynerlarni o'chirmasdan, obrazni `docker rmi [image_id|repository]` orqali o'chirib tashlang.
 ##### *import* buyrug'i yordamida konteynerni qayta import qiling.
 ##### Import qilingan konteynerni ishga tushiring.
 ##### **nginx** server holati sahifasi *localhost:80/status* manzili bo’yicha berilishini tekshiring.

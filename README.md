@@ -150,9 +150,9 @@ Docker image and container are ready. Now we can look into **nginx** configurati
 ##### Check that *localhost:80/status* returns the **nginx** server status page.
 ##### Export the container to a *container.tar* file with the *export* command.
 ##### Stop the container.
-##### Delete the image with `docker rmi [image_id|repository]` without removing the container first.
 ##### Delete stopped container.
-##### Import the container back using the *import* command.
+##### Delete the image with `docker rmi [image_id|repository]`without removing the container first.
+##### Import the container back using the *import*command.
 ##### Run the imported container.
 ##### Check that *localhost:80/status* returns the **nginx** server status page.
 
