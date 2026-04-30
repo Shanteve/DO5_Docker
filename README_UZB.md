@@ -124,8 +124,8 @@ Sizning tanlovingiz juda oddiy **nginxga** to'g'ri keldi.
 
 ##### **nginx**-dan rasmiy doker obrazni oling va uni `docker pull` yordamida yuklab oling.
 ##### `docker images` yordamida doker obrazning mavjudligini tekshiring.
-##### Doker obrazni `docker run -d [image_id|repository]` orqali ishga tushiring.
-##### Obraz `docker ps` orqali ishga tushirilganligini tekshiring
+##### `docker run -d [image_id|repository]` buyrug'i yordamida obraz asosida konteyner yarating va ishga tushiring.
+##### Konteyner ishga tushganini `docker ps` buyrug'i orqali tekshiring.
 ##### `docker inspect [container_id|container_name]` orqali konteyner haqidagi maʼlumotlarni koʻring.
 ##### Buyruqning chiqishi asosida konteynerning o'lchamini, maplangan portlar ro'yxatini va konteyner ip-sini aniqlang va hisobotga joylashtiring.
 ##### `docker stop [container_id|container_name]` yordamida doker konteynerini to'xtating.
@@ -150,16 +150,16 @@ Doker obraz va konteyner tayyor. Endi nginx konfiguratsiyasiga kirib, sahifa hol
 ##### exec buyrug'i yordamida doker konteyneridagi *nginx.conf* konfiguratsiya faylini o'qing.
 ##### Mahalliy mashinada *nginx.conf* faylini yarating.
 ##### **nginx** server holati sahifasini qaytarish uchun uni */status* yo'li bo'ylab sozlang.
-##### Yaratilgan *nginx.conf* faylini `docker cp` buyrug'i yordamida doker obraz ichida nusxalang.
-##### exec buyrug'i yordamida doker obraz ichida **nginx**-ni qayta ishga tushiring.
+##### Yaratilgan *nginx.conf* faylini `docker cp` buyrug'i yordamida doker konteyneri ichida nusxalang.
+##### exec buyrug'i yordamida doker konteyneri ichida **nginx**-ni qayta ishga tushiring.
 ##### **nginx** server holati sahifasi *localhost:80/status* manzili bo’yicha berilishini tekshiring.
 ##### *export* buyrug'i yordamida konteynerni *container.tar* fayliga eksport qiling.
 ##### Konteynerni to'xtating.
 ##### Avval konteynerlarni o'chirmasdan, obrazni `docker rmi [image_id|repository]` orqali o'chirib tashlang.
-##### To'xtatilgan konteynerni o’chiring.
-##### *import* buyrug'i yordamida konteynerni qayta import qiling.
-##### Import qilingan konteynerni ishga tushiring.
-##### **nginx** server holati sahifasi *localhost:80/status* manzili bo’yicha berilishini tekshiring.
+##### To'xtatilgan konteynerni o'chiring.
+##### `import` buyrug'i yordamida *container.tar* faylidan obraz yarating.
+##### Import qilingan obraz asosida konteyner yarating va uni ishga tushiring.
+##### **nginx** server holati sahifasi *localhost:80/status* manzili bo'yicha berilishini tekshiring.
 
 - Hisobotga skrinlarni joylashtiring:
   - vazifaning ushbu qismida ishlatiladigan barcha buyruqlarni chaqirish va chiqarish;

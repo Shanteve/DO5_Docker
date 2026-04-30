@@ -136,8 +136,8 @@ You chose a pretty simple **nginx**.
 
 ##### Take the official docker image from **nginx** and download it using `docker pull`.
 ##### Check for the docker image with `docker images`.
-##### Run docker image with `docker run -d [image_id|repository]`.
-##### Check that the image is running with `docker ps`.
+##### Create and run a container based on the image using `docker run -d [image_id|repository]`.
+##### Check that the container is running using `docker ps`.
 ##### View container information with `docker inspect [container_id|container_name]`.
 ##### From the command output define and write in the report the container size, list of mapped ports and container ip.
 ##### Stop docker container with `docker stop [container_id|container_name]`.
@@ -162,15 +162,15 @@ Docker image and container are ready. Now we can look into **nginx** configurati
 ##### Read the *nginx.conf* configuration file inside the docker container with the *exec* command.
 ##### Create a *nginx.conf* file on a local machine.
 ##### Configure it on the */status* path to return the **nginx** server status page.
-##### Copy the created *nginx.conf* file inside the docker image using the `docker cp` command.
-##### Restart **nginx** inside the docker image with *exec*.
+##### Copy the created *nginx.conf* file inside the docker container using the `docker cp` command.
+##### Restart **nginx** inside the docker container with *exec*.
 ##### Check that *localhost:80/status* returns the **nginx** server status page.
 ##### Export the container to a *container.tar* file with the *export* command.
 ##### Stop the container.
 ##### Delete the image with `docker rmi [image_id|repository]` without removing the container first.
-##### Delete stopped container.
-##### Import the container back using the *import* command.
-##### Run the imported container.
+##### Delete the stopped container.
+##### Create an image from the *container.tar* file using the `import` command.
+##### Create and run a container based on the imported image.
 ##### Check that *localhost:80/status* returns the **nginx** server status page.
 
 - Add the following screenshots to the report:
