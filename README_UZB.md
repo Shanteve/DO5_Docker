@@ -224,5 +224,5 @@ Bir vaqtning o'zida bir nechta doker obrazlardan iborat loyihani kengaytirish bi
 ##### Ikkinchi konteynerning 8080 portini mahalliy mashinaning 80 portiga maplang.
 
 ##### Barcha ishga tushirilgan konteynerlarni to'xtating.
-##### `docker-compose build` va `docker-compose up` buyruqlari yordamida loyihani yarating va ishga tushiring.
+##### `docker compose build` va `docker compose up` buyruqlari yordamida loyihani yarating va ishga tushiring.
 ##### *localhost:80* bo’yicha brauzerda avvalgidek siz tomoningizdan yozilgan sahifa berilayotganligini tekshiring.

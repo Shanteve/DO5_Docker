@@ -237,6 +237,6 @@ Why not try experimenting with deploying a project consisting of several docker 
 ##### 2) Start the docker container with **nginx** which will proxy all requests from port 8080 to port 81 of the first container.
 ##### Map port 8080 of the second container to port 80 of the local machine.
 ##### Stop all running containers.
-##### Build and run the project with the `docker-compose build` and `docker-compose up` commands.
+##### Build and run the project with the `docker compose build` and `docker compose up` commands.
 ##### Check that the browser returns the page you wrote on *localhost:80* as before.
 
