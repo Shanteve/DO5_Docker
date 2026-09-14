@@ -306,6 +306,9 @@ Status страница nginx в браузере
 - ![Импорт из файла и запуск контейнера](report_images/part_2/nginx_import_run.png)
 Импорт из файла и запуск контейнера
 
+- ![Status страница nginx](report_images/part_2/new_status_page.png)
+Статус страница nginx в браузере
+
 ## Part 3
 - ![Вывод моего fastcgi сервера](report_images/part_3/my_server.png)
 Вывод моего fastcgi сервера
