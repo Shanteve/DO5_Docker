@@ -1,0 +1,22 @@
+FROM alpine:3.24 as builder
+
+RUN apk add --no-cache gcc \
+    musl-dev \
+    fcgi-dev
+
+COPY server/server.c server.c
+
+RUN gcc -o server server.c -lfcgi 
+
+
+FROM nginx:1.31-alpine3.24
+
+RUN apk add --no-cache spawn-fcgi fcgi
+
+WORKDIR /app
+
+COPY --from=builder server server
+
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+
+CMD spawn-fcgi -p 8080 /app/server && nginx -g 'daemon off;'
