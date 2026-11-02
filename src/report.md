@@ -1,6 +1,7 @@
 ## Part 1
 - ![Скачал nginx образ](report_images/part_1/download_nginx_image.png)
 Скачал nginx образ. Использован легковесный дистрибутив alpine + полный тег
+
 - ![Вывод docker images](report_images/part_1/print_images.png)
 Вывод docker images
 - ![Запуск контейнера и вывод всех запущенных контейнеров](report_images/part_1/docker_run_ps.png)
